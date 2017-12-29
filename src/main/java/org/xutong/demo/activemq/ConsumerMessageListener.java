@@ -12,7 +12,6 @@ public class ConsumerMessageListener implements MessageListener {
         TextMessage textMsg = (TextMessage) message;
         System.out.println("接收到一个纯文本消息。");
         try {
-
             System.out.println("消息内容是：" + textMsg.getText());
         } catch (JMSException e) {
             e.printStackTrace();
